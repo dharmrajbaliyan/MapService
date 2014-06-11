@@ -1,0 +1,19 @@
+http://janmatuschek.de/LatitudeLongitudeBoundingCoordinates
+
+//compute distance between lat long
+http://andrew.hedges.name/experiments/haversine/
+
+//Earth models
+http://www.gmat.unsw.edu.au/snap/gps/clynch_pdfs/Mapmodel.pdf
+
+
+//Firefox geolocation api
+https://developer.mozilla.org/en-US/docs/WebAPI/Using_geolocation
+
+
+//Create swap space on ec2 commands
+sudo dd if=/dev/zero of=/var/swapfile bs=1M count=2048 &&
+sudo chmod 600 /var/swapfile &&
+sudo mkswap /var/swapfile &&
+echo /var/swapfile none swap defaults 0 0 | sudo tee -a /etc/fstab &&
+sudo swapon -a
